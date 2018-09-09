@@ -1,6 +1,7 @@
-from flask import render_template
+from flask import render_template, request, redirect, url_for, abort  
 from . import main
 from flask_login import login_required,UserMixin
+from ..models import Pitch, User 
 
 # Views
 @main.route('/')
