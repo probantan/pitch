@@ -10,7 +10,11 @@ This application enables the users to:
 ### Link
 To view the project on Heroku just click the link https://pitch.herokuapp.com/
 Prerequisites
-You need the following to start working on the project on your local computer: -A text Editor -Python version 3.6 -Flask -Pip -virtualenv
+You need the following to start working on the project on your local computer:
+-A text Editor 
+-Python version 3.6 
+-Flask -Pip 
+-virtualenv
 
 ### Categories used
 * Pick up lines
@@ -33,8 +37,8 @@ git clone git@github.com:probantan/pitch.git
 Run ./start.sh while in the project folder to start the project.
 
 ### Technologies Used
-Python v3.6
-Boostrap
-Flask
+* Python v3.6
+* Boostrap
+* Flask
 License
 ## Copyright (c) {year} {Morings School}
