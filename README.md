@@ -11,10 +11,10 @@ This application enables the users to:
 To view the project on Heroku just click the link https://pitch.herokuapp.com/
 Prerequisites
 You need the following to start working on the project on your local computer:
--A text Editor 
--Python version 3.6 
--Flask -Pip 
--virtualenv
+* -A text Editor 
+* -Python version 3.6 
+* -Flask -Pip 
+* -virtualenv
 
 ### Categories used
 * Pick up lines
