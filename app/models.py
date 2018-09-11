@@ -25,6 +25,9 @@ class User(UserMixin, db.Model):
     def save_comment(self):
         db.session.add(self)
         db.session.commit()
+    def save_comment(self):
+        db.session.add(self)
+        db.session.commit()
 
     @classmethod
     def get_comments(cls,id):
