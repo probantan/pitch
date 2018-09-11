@@ -16,23 +16,18 @@ class Config:
     SUBJECT_PREFIX = 'One Minute Pitch'
     SENDER_EMAIL = 'protus.bantan@gmail.com'
 
-  
+    @staticmethod
+    def init_app(app):
+        pass
 
 class ProdConfig(Config):
-      '''
-  This is the production configuration child class
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
 
-  Args:
-      Config: The parent configuration class with the general config settings
-  '''
-
-      SQLALCHEMY_DATABASE_URI = os.environ.get("HEROKU_POSTGRESQL_COPPER_URL")
 
 class DevConfig(Config):
-   SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://protus:suzy2015@localhost/pitch'
+    DEBUG = True
 
 config_options = {
-  'development': DevConfig,
-  'production': ProdConfig,
-  'test':TestConfig
+'development':DevConfig,
+'production':ProdConfig
 }

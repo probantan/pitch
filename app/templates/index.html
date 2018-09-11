@@ -14,9 +14,9 @@
             <span style="font-size:40px; font-family: 'Courier New', Courier, monospace; color:white">60 SECONDS PITCH</span>
 
 
-<div class="well" style="float:left">
-        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
-            <div class= style="border: 3px solid red; padding:20px; margin-top:50px; top:50px;">
+<div class="jumbotron" style="float:left">
+        <div class="col-xs-6 col-sm-6 col-md-9 col-lg-9 col-xl-9">
+            <div class= style="border: 1px solid green; ">
              </div>
                 <p style="font-family: 'Bellefair', serif; font-size:40px;  top:20px;">Lets see what you are made of in 60 seconds...show us your worth by writing a fascinating pitch in one of the categories on youe right....You can also view other people's pitches,vote or downvote. </p>
                 
@@ -28,7 +28,7 @@
                     </a>
 
         </div>
-        <div style="background-color:green">
+        <div style="background-color:red">
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 ">  
                     <a href="{{url_for('main.interview')}}" style="font-family:Arial, Helvetica, sans-serif; font-size:25px; color:green; ">
                         Inteview Pitches
@@ -60,7 +60,7 @@
         </div>
     </hr>
         <div class="all-pitches">
-            <span style="color:white; font-size:30px; position:relative; left:380px; top:-5px;">All pitches are displayed below</span>
+            <span style="color:white; font-size:30px; position:relative; left:380px; top:-5px;">ALL Pitches Are Displayed Here...</span>
              
                 {{macro.displayPitches(pitches)}}
             
