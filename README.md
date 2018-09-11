@@ -8,7 +8,7 @@ This application enables the users to:
 * View different pitches of different categories
 * Vote pitches
 ### Link
-To view the project on Heroku just click the link https://pitch.herokuapp.com/
+To view the project on Heroku just click the link https://pitchp.herokuapp.com/
 Prerequisites
 You need the following to start working on the project on your local computer:
 * -A text Editor 
