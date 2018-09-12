@@ -2,6 +2,7 @@ import os
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://protus:suzy2015@localhost/pitch'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
 
     #  email configurations
@@ -19,15 +20,19 @@ class Config:
 
 class ProdConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
-    # pass
-# class TestConfig(Config):
-#     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://protus:suzy2015@localhost/pitch'
+    pass
+class TestConfig(Config):
+     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://protus:suzy2015@localhost/pitch_test'
 
-# class DevConfig(Config):
-#     SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://protus:suzy2015@localhost/pitch'
-#     # pass
+class DevConfig(Config):
+    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://protus:suzy2015@localhost/pitch'
+    pass
     DEBUG = True
 
 config_options = {
+'development':DevConfig,    
 'production':ProdConfig,
+'test':TestConfig
+
 }
+
