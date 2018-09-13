@@ -35,7 +35,7 @@ You need the following to start working on the project on your local computer:
 * Ensure you have python3.6 installed in your computer.
 * Create a virtual environment and access the folder via your virtual amchine.
 * From the terminal navigate to the cloned project folder.
-* Create start.sh file and in it write the following lines:
+* Create start.sh file.
 
 * Run ``` ./start.sh ``` while in the project folder to start the project.
 
@@ -47,5 +47,5 @@ You need the following to start working on the project on your local computer:
 * Flask
 
 ### License
-Copyright (c) {year} **{Morings School}**
+Copyright (c) {year} **{Moringa School}**
   
